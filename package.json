@@ -1,0 +1,25 @@
+{
+  "name": "@codebundlesbyvik/html-dev-label",
+  "version": "1.0.0",
+  "description": "An on-page HTML label present when your project is compiled with `process.env.NODE_ENV` set to `development`.",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vikputthiscodeongit/html-dev-label"
+  },
+  "keywords": [
+    "html",
+    "dev",
+    "development",
+    "environment",
+    "version",
+    "label",
+    "indicator"
+  ],
+  "author": "codebundlesbyvik",
+  "license": "MIT",
+  "bugs": "https://github.com/vikputthiscodeongit/html-dev-label/issues",
+  "dependencies": {
+    "@codebundlesbyvik/element-operations": "^1.0.0-2"
+  }
+}
