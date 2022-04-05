@@ -1,6 +1,6 @@
 {
   "name": "@codebundlesbyvik/html-dev-label",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An on-page HTML label present when your project is compiled with `process.env.NODE_ENV` set to `development`.",
   "main": "./index.js",
   "repository": {
