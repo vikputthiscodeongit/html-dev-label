@@ -1,6 +1,6 @@
 # html-dev-label
 [![npm](https://img.shields.io/npm/v/@codebundlesbyvik/html-dev-label)](https://www.npmjs.com/package/@codebundlesbyvik/html-dev-label)
-[![npm - downloads per month](https://img.shields.io/npm/dm/@codebundlesbyvik/html-dev-label)](https://img.shields.io/npm/dm/@codebundlesbyvik/html-dev-label)
+[![npm - downloads per week](https://img.shields.io/npm/dw/@codebundlesbyvik/html-dev-label)](https://www.npmjs.com/package/@codebundlesbyvik/html-dev-label)
 
 An on-page HTML label present when your project is compiled with `process.env.NODE_ENV` set to `development`.
 
@@ -19,7 +19,7 @@ It's easy to confuse the development environment of a website with the live vers
 ## Installation
 
 ```
-// Install from npm
+// Install package from npm
 npm install @codebundlesbyvik/html-dev-label
 ```
 
