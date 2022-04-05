@@ -1,4 +1,4 @@
-import { createEl } from "@codebundlesbyvik/element-operations";
+import createEl from "@codebundlesbyvik/element-operations";
 
 class DevLabel {
     init() {

@@ -8,6 +8,7 @@
     "url": "https://github.com/vikputthiscodeongit/html-dev-label"
   },
   "keywords": [
+    "es6",
     "html",
     "dev",
     "development",
@@ -20,6 +21,6 @@
   "license": "MIT",
   "bugs": "https://github.com/vikputthiscodeongit/html-dev-label/issues",
   "dependencies": {
-    "@codebundlesbyvik/element-operations": "^1.0.0-2"
+    "@codebundlesbyvik/element-operations": "^2.0.0"
   }
 }
