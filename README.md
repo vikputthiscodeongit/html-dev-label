@@ -28,14 +28,18 @@ npm install @codebundlesbyvik/html-dev-label
 ## Usage
 
 ``` javascript
-import HtmlDevLabel from "@codebundlesbyvik/html-dev-label";
+import htmlDevLabel from "@codebundlesbyvik/html-dev-label";
 
-const devLabel = new HtmlDevLabel();
-
-devLabel.init();
+htmlDevLabel("top left");
 ```
 
-When present, the label is shown in the bottom right corner of the page. Positioning options may be added in a future release.
+<br>
+
+## Options
+
+| Parameter  | Type     | Default        | Description                                                                                                 |
+| :--------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------- |
+| `position` | `String` | `bottom right` | On-page position of the label. Accepted value is a combination of `top` or `bottom`, and `left` or `right`. |
 
 <br>
 
