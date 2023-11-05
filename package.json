@@ -1,6 +1,6 @@
 {
   "name": "@codebundlesbyvik/html-dev-label",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "An HTML element rendered on page indicating that your project is compiled with `process.env.NODE_ENV` set to `development`.",
   "keywords": [
     "es6",
