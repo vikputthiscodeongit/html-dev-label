@@ -37,7 +37,7 @@
     "minify": "terser dist/index.js --output dist/index.js --compress passes=2"
   },
   "dependencies": {
-    "@codebundlesbyvik/js-helpers": "file:codebundlesbyvik-js-helpers-1.0.0.tgz"
+    "@codebundlesbyvik/js-helpers": "^1.0.0"
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.3",
