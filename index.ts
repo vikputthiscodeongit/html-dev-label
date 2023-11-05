@@ -50,6 +50,16 @@ const BORDER_WIDTHS = {
 function htmlDevLabel(options: string | [PositionY, PositionX] | Options = DEFAULT_OPTIONS) {
     if (process.env.NODE_ENV !== "development") return;
 
+    const isElInDom = document.body.contains(document.querySelector("#html-dev-label"));
+
+    if (isElInDom) {
+        console.log(
+            "html-dev-label: An element with the htmlDevLabel ID is already in the DOM! Returning.",
+        );
+
+        return;
+    }
+
     if (typeof options === "string") {
         console.warn(
             "html-dev-label: 'position' of type String is deprecated! Please convert its value to an Array.",
@@ -65,15 +75,6 @@ function htmlDevLabel(options: string | [PositionY, PositionX] | Options = DEFAU
     };
     console.log(mergedOptions);
 
-    if (currentLabel) {
-        if (mergedOptions.parentEl.contains(currentLabel)) {
-            console.warn("html-dev-label: Exiting - label is already present on page.");
-
-            return;
-        }
-
-        mergedOptions.parentEl.insertBefore(currentLabel, mergedOptions.parentEl.firstChild);
-    }
 
     const elCss = `position: fixed; ${mergedOptions.position[0]}: 0.25rem; ${
         mergedOptions.position[1]
