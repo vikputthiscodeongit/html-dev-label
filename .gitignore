@@ -23,3 +23,8 @@ Thumbs.db
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Track build tooling files
+!.git*
+!.eslint*
+!.prettier*
