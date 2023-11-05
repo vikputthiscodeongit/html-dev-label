@@ -1,4 +1,3 @@
-import createEl from "@codebundlesbyvik/element-operations";
 
 type DevLabelPositions = "top" | "bottom" | "left" | "right";
 interface DevLabelOptions {
@@ -8,6 +7,7 @@ interface DevLabelOptions {
     borderColor: string,
     borderWidth: "normal" | "wide"
 }
+import { createEl } from "@codebundlesbyvik/js-helpers";
 
 const FONT_FAMILIES = {
     monospace: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',

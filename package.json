@@ -21,6 +21,7 @@
   "license": "MIT",
   "bugs": "https://github.com/vikputthiscodeongit/html-dev-label/issues",
   "dependencies": {
-    "@codebundlesbyvik/element-operations": "^2.0.0"
+    "@codebundlesbyvik/js-helpers": "file:codebundlesbyvik-js-helpers-1.0.0.tgz"
+  },
   }
 }
