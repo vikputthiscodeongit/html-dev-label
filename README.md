@@ -30,16 +30,32 @@ npm install @codebundlesbyvik/html-dev-label
 ``` javascript
 import htmlDevLabel from "@codebundlesbyvik/html-dev-label";
 
-htmlDevLabel("top left");
+htmlDevLabel(["top", "left"]);
 ```
 
 <br>
 
 ## Options
+`htmlDevLabel` accepts a single, optional parameter which is either:
+* An `Array` with 2 `position` values, or
+* An `Object` containing one or more of the option entries listed in the table below.
 
-| Parameter  | Type     | Default        | Description                                                                                                 |
-| :--------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------- |
-| `position` | `String` | `bottom right` | On-page position of the label. Accepted value is a combination of `top` or `bottom`, and `left` or `right`. |
+| Key               | Type                                         | Default               | Description                                                                                                                 |
+| :---------------- | :------------------------------------------- | :-------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| `parentEl`        | `HTMLElement`                                | `document.body`       | Element of which the label will become the first child.                                                                     |
+| `position`        | `["top" \| "bottom", "left" \| "right"]`     | `["bottom", "right"]` | Position of the label.                                                                                                      |
+| `size`            | `"sm" \| "md" \| "lg"`                       | `"md"`                | Size of the label.                                                                                                          |
+| `text`            | `String`                                     | `"Build: dev"`        | Text shown inside the label.                                                                                                |
+| `fontFamily`      | `["monospace" \| "sans-serif" \| "inherit"]` | `"monospace"`         | Style of font family used for the label text. Will use the computed value of the parent element when set to `"inherit"`.    |
+| `backgroundColor` | `String`                                     | `"#FFFFFF"` (white)   | Background color of the label.                                                                                              |
+| `borderColor`     | `String`                                     | `"#FF0000"` (red)     | Border color of the label.                                                                                                  |
+
+<br>
+
+## Migrating from version 2
+* **If you manually set `position` then you must convert its value to an `Array`.**
+* **The default `font-family` used for the label text has changed.**
+  * If you prefer the old look, use value `"sans-serif"` for the `fontFamily` option.
 
 <br>
 
