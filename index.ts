@@ -50,6 +50,8 @@ const BORDER_WIDTHS = {
 function htmlDevLabel(options: string | [PositionY, PositionX] | Options = DEFAULT_OPTIONS) {
     if (process.env.NODE_ENV !== "development") return;
 
+    console.log("Project is compiled in development mode.");
+
     const isElInDom = document.body.contains(document.querySelector("#html-dev-label"));
 
     if (isElInDom) {
@@ -73,8 +75,6 @@ function htmlDevLabel(options: string | [PositionY, PositionX] | Options = DEFAU
         ...DEFAULT_OPTIONS,
         ...userOptions,
     };
-    console.log(mergedOptions);
-
 
     const elCss = `position: fixed; ${mergedOptions.position[0]}: 0.25rem; ${
         mergedOptions.position[1]
