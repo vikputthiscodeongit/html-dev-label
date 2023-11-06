@@ -35,10 +35,8 @@ const FONT_SIZES = {
     lg: "1.5rem",
 };
 const FONT_FAMILIES = {
-    monospace:
-        'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
-    "sans-serif":
-        'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif',
+    monospace: 'SFMono-Regular, Consolas, "Liberation Mono", monospace',
+    "sans-serif": "system-ui",
     inherit: "inherit",
 };
 const BORDER_WIDTHS = {
