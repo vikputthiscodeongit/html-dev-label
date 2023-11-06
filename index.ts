@@ -55,16 +55,14 @@ function htmlDevLabel(options: string | [PositionY, PositionX] | Options = DEFAU
     const isElInDom = document.body.contains(document.querySelector("#html-dev-label"));
 
     if (isElInDom) {
-        console.log(
-            "html-dev-label: An element with the htmlDevLabel ID is already in the DOM! Returning.",
-        );
+        console.log("Returning - Element with htmlDevLabel ID already in the DOM.");
 
         return;
     }
 
     if (typeof options === "string") {
         console.warn(
-            "html-dev-label: 'position' of type String is deprecated! Please convert its value to an Array.",
+            "Returning - 'position' of type String is deprecated. Convert it to an Array.",
         );
 
         return;
