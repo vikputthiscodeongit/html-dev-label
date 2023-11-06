@@ -9,7 +9,7 @@ An HTML element rendered on page indicating that your project is compiled with `
 <br>
 
 ## Why?
-It's easy to confuse the development environment of a website with the live version when you have many tabs & windows open. Well, not any more.
+It's easy to confuse the development environment of a website with production when you have many tabs & windows open. Well, not any more.
 
 <br>
 
@@ -41,7 +41,7 @@ htmlDevLabel(["top", "left"]);
 | `position`        | `["top" \| "bottom", "left" \| "right"]`     | `["bottom", "right"]` | Position of the label.                                                                                                      |
 | `size`            | `"sm" \| "md" \| "lg"`                       | `"md"`                | Size of the label.                                                                                                          |
 | `text`            | `String`                                     | `"Build: dev"`        | Text shown inside the label.                                                                                                |
-| `fontFamily`      | `["monospace" \| "sans-serif" \| "inherit"]` | `"monospace"`         | Style of font family used for the label text. Will use the computed value of the parent element when set to `"inherit"`.    |
+| `fontFamily`      | `"monospace" \| "sans-serif" \| "inherit"`   | `"monospace"`         | Style of font family used for the label text. Will use the computed value of the parent element when set to `"inherit"`.    |
 | `backgroundColor` | `String`                                     | `"#FFFFFF"` (white)   | Background color of the label.                                                                                              |
 | `borderColor`     | `String`                                     | `"#FF0000"` (red)     | Border color of the label.                                                                                                  |
 
