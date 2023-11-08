@@ -31,8 +31,8 @@
   "type": "module",
   "scripts": {
     "compile-js": "tsc",
-    "lint": "eslint * --config .eslintrc.cjs",
-    "lint-fix": "eslint * --config .eslintrc.cjs --fix",
+    "lint": "eslint . --config .eslintrc.cjs",
+    "lint-fix": "eslint . --config .eslintrc.cjs --fix",
     "make-release": "cross-env NODE_ENV=production npm run lint-fix && rimraf dist && npm run compile-js && npm run minify",
     "minify": "terser dist/index.js --output dist/index.js --compress passes=2"
   },
