@@ -35,7 +35,7 @@ const FONT_SIZES = {
     lg: "1.5rem",
 };
 const FONT_FAMILIES = {
-    monospace: 'SFMono-Regular, Consolas, "Liberation Mono", monospace',
+    monospace: 'SFMono-Regular,Consolas,"Liberation Mono",monospace',
     "sans-serif": "system-ui,sans-serif",
     inherit: "inherit",
 };
@@ -72,13 +72,13 @@ function htmlDevLabel(options: string | [PositionY, PositionX] | Options = DEFAU
         ...userOpts,
     };
 
-    const elCss = `position: fixed; ${mergedOpts.position[0]}: 0.25rem; ${
+    const elCss = `position:fixed;${mergedOpts.position[0]}:0.25rem;${
         mergedOpts.position[1]
-    }: 0.25rem; z-index: 1000000; padding: ${
+    }:0.25rem;z-index:1000000;padding:${
         PADDINGS[mergedOpts.size]
-    }; text-transform: uppercase; font: 700 ${FONT_SIZES[mergedOpts.size]}/1.2 ${
+    };text-transform:uppercase;font:700 ${FONT_SIZES[mergedOpts.size]}/1.2 ${
         FONT_FAMILIES[mergedOpts.fontFamily]
-    }; background-color: ${mergedOpts.backgroundColor}; border: ${
+    };background-color:${mergedOpts.backgroundColor};border:${
         BORDER_WIDTHS[mergedOpts.size]
     } solid ${mergedOpts.borderColor};`;
 
