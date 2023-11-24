@@ -36,7 +36,7 @@ const FONT_SIZES = {
 };
 const FONT_FAMILIES = {
     monospace: 'SFMono-Regular, Consolas, "Liberation Mono", monospace',
-    "sans-serif": "system-ui",
+    "sans-serif": "system-ui,sans-serif",
     inherit: "inherit",
 };
 const BORDER_WIDTHS = {
