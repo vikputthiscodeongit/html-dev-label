@@ -74,13 +74,11 @@ function htmlDevLabel(options: string | [PositionY, PositionX] | Options = DEFAU
 
     const elCss = `position:fixed;${mergedOpts.position[0]}:0.25rem;${
         mergedOpts.position[1]
-    }:0.25rem;z-index:1000000;padding:${
-        PADDINGS[mergedOpts.size]
-    };text-transform:uppercase;font:700 ${FONT_SIZES[mergedOpts.size]}/1.2 ${
-        FONT_FAMILIES[mergedOpts.fontFamily]
-    };background-color:${mergedOpts.backgroundColor};border:${
-        BORDER_WIDTHS[mergedOpts.size]
-    } solid ${mergedOpts.borderColor};`;
+    }:0.25rem;z-index:1100;padding:${PADDINGS[mergedOpts.size]};text-transform:uppercase;font:700 ${
+        FONT_SIZES[mergedOpts.size]
+    }/1.2 ${FONT_FAMILIES[mergedOpts.fontFamily]};background-color:${
+        mergedOpts.backgroundColor
+    };border:${BORDER_WIDTHS[mergedOpts.size]} solid ${mergedOpts.borderColor};`;
 
     const el = createEl("div", {
         id: "html-dev-label",
