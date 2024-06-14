@@ -9,7 +9,7 @@ An HTML element rendered on page indicating that your project is compiled with `
 <br>
 
 ## Why?
-It's easy to confuse the development environment of a website with production when you have many tabs & windows open. Well, not any more.
+It's easy to confuse the development environment of a website with production when you have multiple tabs or windows open. Well, not any more.
 
 <br>
 
@@ -20,7 +20,7 @@ Install the package with npm.
 npm install @codebundlesbyvik/html-dev-label
 ```
 
-Import and initialize `htmlDevLabel`. I recommend you do this in your main JavaScript file.
+Import and initialize `htmlDevLabel`.
 
 ``` javascript
 import htmlDevLabel from "@codebundlesbyvik/html-dev-label";
@@ -32,8 +32,8 @@ htmlDevLabel(["top", "left"]);
 
 ## Options
 `htmlDevLabel` accepts a single, optional parameter which is either:
-* An `Array` with 2 `position` values, or
-* An `Object` containing one or more of the option entries listed in the table below.
+* An `Object` containing one or more of the option entries listed in the table below, or
+* **Deprecated**: An `Array` with 2 `position` values
 
 | Key               | Type                                         | Default               | Description                                                                                                                 |
 | :---------------- | :------------------------------------------- | :-------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
@@ -48,11 +48,11 @@ htmlDevLabel(["top", "left"]);
 <br>
 
 ## Migrating from version 2
-* **If you manually set `position` then you must convert its value to an `Array`.**
-* **The default `font-family` used for the label text has changed.**
+* __Breaking change__: `position` as `String` is deprecated. Convert the value to an `Array`.
+* __Breaking change__: The default `font-family` used for the label text has changed.
   * If you prefer the old look, use value `"sans-serif"` for the `fontFamily` option.
 
 <br>
 
 ## License
-MIT © 2023 [Viktor Chin-Kon-Sung](https://github.com/vikputthiscodeongit)
+MIT © 2024 [Viktor Chin-Kon-Sung](https://github.com/vikputthiscodeongit)
