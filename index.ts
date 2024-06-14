@@ -1,33 +1,29 @@
 import { createEl } from "@codebundlesbyvik/js-helpers";
 
-type PositionY = "top" | "bottom";
-type PositionX = "left" | "right";
-
-interface DefaultOptions {
-    parentEl: HTMLElement;
-    position: [PositionY, PositionX];
-    size: "sm" | "md" | "lg";
-    text: string;
-    fontFamily: "monospace" | "sans-serif" | "inherit";
-    backgroundColor: string;
-    borderColor: string;
+interface Options {
+    parentEl?: HTMLElement;
+    position?: ["top" | "bottom", "left" | "right"];
+    size?: "sm" | "md" | "lg";
+    text?: string;
+    fontFamily?: "monospace" | "sans-serif" | "inherit";
+    backgroundColor?: string;
+    borderColor?: string;
 }
-interface Options extends Partial<DefaultOptions> {}
 
-const DEFAULT_OPTS: DefaultOptions = {
+const DEFAULT_OPTS: Required<Options> = {
     parentEl: document.body,
     position: ["bottom", "right"],
     size: "md",
     text: "Build: dev",
     fontFamily: "monospace",
-    backgroundColor: "#FFFFFF",
-    borderColor: "#FF0000",
+    backgroundColor: "#FFF",
+    borderColor: "#F00",
 };
 
 const PADDINGS = {
     sm: "0.75rem",
     md: "1rem",
-    lg: "1.333333rem",
+    lg: "1.3333rem",
 };
 const FONT_SIZES = {
     sm: "1rem",
@@ -42,10 +38,10 @@ const FONT_FAMILIES = {
 const BORDER_WIDTHS = {
     sm: "0.1875rem",
     md: "0.25rem",
-    lg: "0.333333rem",
+    lg: "0.3333rem",
 };
 
-function htmlDevLabel(options: string | [PositionY, PositionX] | Options = DEFAULT_OPTS) {
+function htmlDevLabel(options?: string | Options["position"] | Options) {
     if (process.env.NODE_ENV !== "development") return;
 
     console.log("Project is compiled in development mode.");
