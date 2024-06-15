@@ -49,15 +49,13 @@ function htmlDevLabel(options?: string | Options["position"] | Options) {
     const isElInDom = document.body.contains(document.querySelector("#html-dev-label"));
 
     if (isElInDom) {
-        console.log("Returning - Element with htmlDevLabel ID already in the DOM.");
+        console.log("Returning - Element #htmlDevLabel already in the DOM.");
 
         return;
     }
 
     if (typeof options === "string") {
-        console.warn(
-            "Returning - 'position' of type String is deprecated. Convert it to an Array.",
-        );
+        console.warn("Returning - 'position' as String is deprecated. Convert it to an Array.");
 
         return;
     }
