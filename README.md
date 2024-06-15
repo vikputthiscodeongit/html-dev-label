@@ -2,7 +2,7 @@
 [![npm](https://img.shields.io/npm/v/@codebundlesbyvik/html-dev-label)](https://www.npmjs.com/package/@codebundlesbyvik/html-dev-label)
 [![npm - downloads per week](https://img.shields.io/npm/dw/@codebundlesbyvik/html-dev-label)](https://www.npmjs.com/package/@codebundlesbyvik/html-dev-label)
 
-An HTML element rendered on page indicating that your project is compiled with `process.env.NODE_ENV` set to `development`.
+An HTML element rendered on page which indicates that your project is compiled with `process.env.NODE_ENV` set to `development`.
 
 ![html-dev-label](https://github.com/vikputthiscodeongit/html-dev-label/assets/16013785/b57218f9-7154-448a-91f2-7bb97e375972)
 
@@ -33,7 +33,7 @@ htmlDevLabel(["top", "left"]);
 ## Options
 `htmlDevLabel` accepts a single, optional parameter which is either:
 * An `Object` containing one or more of the option entries listed in the table below, or
-* **Deprecated**: An `Array` with 2 `position` values
+* __Deprecated__: An `Array` with 2 `position` values
 
 | Key               | Type                                         | Default               | Description                                                                                                                 |
 | :---------------- | :------------------------------------------- | :-------------------- | :-------------------------------------------------------------------------------------------------------------------------- |

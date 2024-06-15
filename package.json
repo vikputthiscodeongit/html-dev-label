@@ -1,16 +1,18 @@
 {
   "name": "@codebundlesbyvik/html-dev-label",
   "version": "3.0.1",
-  "description": "An HTML element rendered on page indicating that your project is compiled with `process.env.NODE_ENV` set to `development`.",
+  "description": "An HTML element rendered on page which indicates that your project is compiled with `process.env.NODE_ENV` set to `development`.",
   "keywords": [
-    "es6",
-    "html",
+    "NODE_ENV",
     "dev",
     "development",
     "environment",
-    "version",
+    "target",
     "label",
-    "indicator"
+    "indicator",
+    "html",
+    "module",
+    "esm"
   ],
   "license": "MIT",
   "author": "codebundlesbyvik",
