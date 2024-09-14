@@ -71,9 +71,8 @@ function htmlDevLabel(positionOrOptions?: Options["position"] | Options) {
     const el = createEl("div", {
         id: "html-dev-label",
         style: elCss,
+        textContent: options.text,
     });
-
-    el.textContent = mergedOpts.text;
 
     mergedOpts.parentEl.insertBefore(el, mergedOpts.parentEl.firstElementChild);
 }
