@@ -2,14 +2,9 @@
 [![npm](https://img.shields.io/npm/v/@codebundlesbyvik/html-dev-label)](https://www.npmjs.com/package/@codebundlesbyvik/html-dev-label)
 [![npm - downloads per week](https://img.shields.io/npm/dw/@codebundlesbyvik/html-dev-label)](https://www.npmjs.com/package/@codebundlesbyvik/html-dev-label)
 
-An HTML element rendered on page which indicates that your project is compiled with `process.env.NODE_ENV` set to `development`.
+An HTML element rendered on page which indicates your project is compiled with `process.env.NODE_ENV` set to `development`.
 
 ![html-dev-label](https://github.com/vikputthiscodeongit/html-dev-label/assets/16013785/b57218f9-7154-448a-91f2-7bb97e375972)
-
-<br>
-
-## Why?
-It's easy to confuse the development environment of a website with production when you have multiple tabs or windows open. Well, not any more.
 
 <br>
 
@@ -22,7 +17,7 @@ To use, install the package with npm...
 npm install @codebundlesbyvik/html-dev-label
 ```
 
-Import and initialize `htmlDevLabel`.
+...and import and initialize `htmlDevLabel`.
 
 ``` javascript
 import htmlDevLabel from "@codebundlesbyvik/html-dev-label";
