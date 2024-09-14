@@ -10,7 +10,7 @@ interface Options {
     borderColor?: string;
 }
 
-const DEFAULT_OPTS: Required<Options> = {
+const DEFAULT_OPTIONS: Required<Options> = {
     parentEl: document.body,
     position: ["bottom", "right"],
     size: "md",
@@ -46,27 +46,29 @@ function htmlDevLabel(positionOrOptions?: Options["position"] | Options) {
 
     console.log("Project is compiled in development mode.");
 
-    const isElInDom = document.body.contains(document.querySelector("#html-dev-label"));
+    const elInDom = document.body.contains(document.querySelector("#html-dev-label"));
 
-    if (isElInDom) {
-        console.log("Returning - Element #htmlDevLabel already in the DOM.");
+    if (elInDom) {
+        console.log("Element #htmlDevLabel already in the DOM.");
 
         return;
     }
 
-    const userOpts = Array.isArray(options) ? { position: options } : options;
-    const mergedOpts = {
-        ...DEFAULT_OPTS,
-        ...userOpts,
+    const userOptions = Array.isArray(positionOrOptions)
+        ? { position: positionOrOptions }
+        : positionOrOptions;
+    const options = {
+        ...DEFAULT_OPTIONS,
+        ...userOptions,
     };
 
-    const elCss = `position:fixed;${mergedOpts.position[0]}:0.25rem;${
-        mergedOpts.position[1]
-    }:0.25rem;z-index:1100;padding:${PADDINGS[mergedOpts.size]};text-transform:uppercase;font:700 ${
-        FONT_SIZES[mergedOpts.size]
-    }/1.2 ${FONT_FAMILIES[mergedOpts.fontFamily]};background-color:${
-        mergedOpts.backgroundColor
-    };border:${BORDER_WIDTHS[mergedOpts.size]} solid ${mergedOpts.borderColor};`;
+    const elCss = `position:fixed;${options.position[0]}:0.25rem;${
+        options.position[1]
+    }:0.25rem;z-index:1100;padding:${PADDINGS[options.size]};text-transform:uppercase;font:700 ${
+        FONT_SIZES[options.size]
+    }/1.2 ${FONT_FAMILIES[options.fontFamily]};background-color:${
+        options.backgroundColor
+    };border:${BORDER_WIDTHS[options.size]} solid ${options.borderColor};`;
 
     const el = createEl("div", {
         id: "html-dev-label",
@@ -74,7 +76,7 @@ function htmlDevLabel(positionOrOptions?: Options["position"] | Options) {
         textContent: options.text,
     });
 
-    mergedOpts.parentEl.insertBefore(el, mergedOpts.parentEl.firstElementChild);
+    options.parentEl.insertBefore(el, options.parentEl.firstElementChild);
 }
 
 export { htmlDevLabel as default };

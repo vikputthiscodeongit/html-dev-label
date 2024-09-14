@@ -44,8 +44,8 @@ htmlDevLabel(["top", "left"]);
 | `size`            | `"sm" \| "md" \| "lg"`                       | `"md"`                | Size of the label.                                                                                                          |
 | `text`            | `String`                                     | `"DEV BUILD"`         | Text shown inside the label.                                                                                                |
 | `fontFamily`      | `"monospace" \| "sans-serif" \| "inherit"`   | `"monospace"`         | Style of font family used for the label text. Will use the computed value of the parent element when set to `"inherit"`.    |
-| `backgroundColor` | `String`                                     | `"#FFFFFF"` (white)   | Background color of the label.                                                                                              |
-| `borderColor`     | `String`                                     | `"#FF0000"` (red)     | Border color of the label.                                                                                                  |
+| `backgroundColor` | `String`                                     | `"#FFF"` (white)      | Background color of the label.                                                                                              |
+| `borderColor`     | `String`                                     | `"#F00"` (red)        | Border color of the label.                                                                                                  |
 
 <br>
 
