@@ -14,7 +14,7 @@ const DEFAULT_OPTS: Required<Options> = {
     parentEl: document.body,
     position: ["bottom", "right"],
     size: "md",
-    text: "Build: dev",
+    text: "DEV BUILD",
     fontFamily: "monospace",
     backgroundColor: "#FFF",
     borderColor: "#F00",
