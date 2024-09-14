@@ -49,6 +49,9 @@ htmlDevLabel(["top", "left"]);
 
 <br>
 
+## Migrating from version 3
+* Support for `position` as `String` has been fully removed.
+
 ## Migrating from version 2
 * __Breaking change__: `position` as `String` is deprecated. Convert the value to an `Array`.
 * __Breaking change__: The default `font-family` used for the label text has changed.

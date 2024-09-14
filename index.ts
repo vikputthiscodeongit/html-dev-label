@@ -41,7 +41,7 @@ const BORDER_WIDTHS = {
     lg: "0.3333rem",
 };
 
-function htmlDevLabel(options?: string | Options["position"] | Options) {
+function htmlDevLabel(positionOrOptions?: Options["position"] | Options) {
     if (process.env.NODE_ENV !== "development") return;
 
     console.log("Project is compiled in development mode.");
@@ -50,12 +50,6 @@ function htmlDevLabel(options?: string | Options["position"] | Options) {
 
     if (isElInDom) {
         console.log("Returning - Element #htmlDevLabel already in the DOM.");
-
-        return;
-    }
-
-    if (typeof options === "string") {
-        console.warn("Returning - 'position' as String is deprecated. Convert it to an Array.");
 
         return;
     }
