@@ -14,7 +14,9 @@ It's easy to confuse the development environment of a website with production wh
 <br>
 
 ## Installation and usage
-Install the package with npm.
+Compatible with Node.js projects that support ECMAScript 2018 (ES9) or greater.
+
+To use, install the package with npm...
 
 ``` shell
 npm install @codebundlesbyvik/html-dev-label
