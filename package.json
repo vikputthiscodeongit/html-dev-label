@@ -39,7 +39,7 @@
     "minify": "terser dist/index.js --output dist/index.js --compress passes=2"
   },
   "dependencies": {
-    "@codebundlesbyvik/js-helpers": "2.0.0"
+    "@codebundlesbyvik/js-helpers": "2.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.10.0",
