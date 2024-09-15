@@ -4,7 +4,7 @@
 
 An HTML element rendered on page which indicates your project is compiled with `process.env.NODE_ENV` set to `development`.
 
-![html-dev-label](https://github.com/vikputthiscodeongit/html-dev-label/assets/16013785/b57218f9-7154-448a-91f2-7bb97e375972)
+![html-dev-label](https://github.com/user-attachments/assets/f7125598-e11b-4c1d-b7af-644bf04caaa9)
 
 <br>
 
