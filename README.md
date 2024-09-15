@@ -45,9 +45,6 @@ htmlDevLabel(["top", "left"]);
 <br>
 
 ## Migrating
-### From version 3
-* Support for `position` as `String` has been fully removed.
-
 ### From version 2
 * __Breaking change__:
   * `position` as `String` is deprecated. Convert the value to an `Array`.
