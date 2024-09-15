@@ -29,8 +29,8 @@ htmlDevLabel(["top", "left"]);
 
 ## Options
 `htmlDevLabel` accepts a single, optional parameter which is either:
-* An `Object` containing one or more of the option entries listed in the table below, or
-* __Deprecated__: An `Array` with 2 `position` values
+* An `Array` with 2 `position` values, or
+* An `Object` containing one or more of the option entries listed in the table below.
 
 | Key               | Type                                         | Default               | Description                                                                                                                 |
 | :---------------- | :------------------------------------------- | :-------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
@@ -48,9 +48,10 @@ htmlDevLabel(["top", "left"]);
 * Support for `position` as `String` has been fully removed.
 
 ## Migrating from version 2
-* __Breaking change__: `position` as `String` is deprecated. Convert the value to an `Array`.
-* __Breaking change__: The default `font-family` used for the label text has changed.
-  * If you prefer the old look, use value `"sans-serif"` for the `fontFamily` option.
+* __Breaking change__:
+  * `position` as `String` is deprecated. Convert the value to an `Array`.
+  * The default `font-family` used for the label text has changed.
+    * If you prefer the old look, use value `"sans-serif"` for the `fontFamily` option.
 
 <br>
 
