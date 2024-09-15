@@ -1,16 +1,18 @@
 {
   "name": "@codebundlesbyvik/html-dev-label",
-  "version": "3.0.1",
-  "description": "An HTML element rendered on page indicating that your project is compiled with `process.env.NODE_ENV` set to `development`.",
+  "version": "3.1.1",
+  "description": "An HTML element rendered on page which indicates your project is compiled with `process.env.NODE_ENV` set to `development`.",
   "keywords": [
-    "es6",
-    "html",
+    "NODE_ENV",
     "dev",
     "development",
     "environment",
-    "version",
+    "target",
     "label",
-    "indicator"
+    "indicator",
+    "html",
+    "module",
+    "esm"
   ],
   "license": "MIT",
   "author": "codebundlesbyvik",
@@ -31,27 +33,28 @@
   "type": "module",
   "scripts": {
     "compile-js": "tsc",
-    "lint": "eslint * --config .eslintrc.cjs",
-    "lint-fix": "eslint * --config .eslintrc.cjs --fix",
-    "make-release": "cross-env NODE_ENV=production npm run lint-fix && rimraf dist && npm run compile-js && npm run minify",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix",
+    "build": "cross-env NODE_ENV=production npm run lint-fix && rimraf dist && npm run compile-js && npm run minify",
     "minify": "terser dist/index.js --output dist/index.js --compress passes=2"
   },
   "dependencies": {
-    "@codebundlesbyvik/js-helpers": "^1.0.0"
+    "@codebundlesbyvik/js-helpers": "2.1.0"
   },
   "devDependencies": {
-    "@tsconfig/recommended": "^1.0.3",
-    "@types/node": "^20.8.10",
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
+    "@eslint/js": "^9.10.0",
+    "@tsconfig/recommended": "^1.0.7",
+    "@types/node": "^22.5.5",
     "cross-env": "^7.0.3",
-    "eslint": "^8.53.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "prettier": "^3.0.3",
-    "rimraf": "^5.0.5",
-    "terser": "^5.24.0",
-    "typescript": "^5.2.2"
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "terser": "^5.32.0",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.5.0"
   },
   "engines": {
     "node": ">=12.22.0"
