@@ -36,7 +36,7 @@
     "lint": "eslint",
     "lint-fix": "eslint --fix",
     "build": "cross-env NODE_ENV=production npm run lint-fix && rimraf dist && npm run compile-js && npm run minify",
-    "minify": "terser dist/index.js --output dist/index.js --compress passes=2"
+    "minify": "terser dist/index.js --output dist/index.js --ecma 2021 --compress passes=2"
   },
   "dependencies": {
     "@codebundlesbyvik/js-helpers": "2.1.0"

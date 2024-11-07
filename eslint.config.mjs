@@ -18,7 +18,7 @@ export default tsEslint.config(
         languageOptions: {
             globals: {
                 ...globals.browser,
-                ...globals.es2017,
+                ...globals.es2024,
             },
             parserOptions: {
                 project: ["tsconfig.json"],
