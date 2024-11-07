@@ -1,12 +1,12 @@
 {
     "extends": "@tsconfig/recommended/tsconfig.json",
     "compilerOptions": {
-        "target": "ES2021",
-        "lib": ["ES2021", "DOM"],
         "module": "ES2020",
         "moduleResolution": "bundler",
+        "declaration": true,
         "outDir": "dist",
-        "declaration": true
+        "lib": ["ES2021", "DOM"],
+        "target": "ES2021",
     },
     "include": ["index.ts"]
 }
