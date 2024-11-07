@@ -57,7 +57,7 @@ function htmlDevLabel(positionOrOptions?: Options["position"] | Options) {
         ...userOptions,
     };
 
-    const elCss = `position:fixed;${options.position[0]}:0.25rem;${
+    const elCss = `user-select:none;position:fixed;${options.position[0]}:0.25rem;${
         options.position[1]
     }:0.25rem;z-index:1100;padding:${PADDINGS[options.size]};text-transform:uppercase;font:700 ${
         FONT_SIZES[options.size]
