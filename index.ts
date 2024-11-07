@@ -8,6 +8,7 @@ interface Options {
     fontFamily?: "monospace" | "sans-serif" | "inherit";
     backgroundColor?: string;
     borderColor?: string;
+    hideOnHover?: boolean;
 }
 
 const DEFAULT_OPTIONS: Required<Options> = {
@@ -18,6 +19,7 @@ const DEFAULT_OPTIONS: Required<Options> = {
     fontFamily: "monospace",
     backgroundColor: "#FFF",
     borderColor: "#F00",
+    hideOnHover: false,
 };
 
 const PADDINGS = {
