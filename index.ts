@@ -30,11 +30,6 @@ const FONT_SIZES = {
     md: "1.25rem",
     lg: "1.5rem",
 };
-const FONT_FAMILIES = {
-    monospace: 'SFMono-Regular,Consolas,"Liberation Mono",monospace',
-    "sans-serif": "system-ui,sans-serif",
-    inherit: "inherit",
-};
 const BORDER_WIDTHS = {
     sm: "0.1875rem",
     md: "0.25rem",
@@ -66,7 +61,7 @@ function htmlDevLabel(positionOrOptions?: Options["position"] | Options) {
         options.position[1]
     }:0.25rem;z-index:1100;padding:${PADDINGS[options.size]};text-transform:uppercase;font:700 ${
         FONT_SIZES[options.size]
-    }/1.2 ${FONT_FAMILIES[options.fontFamily]};background-color:${
+    }/1.2 ${options.fontFamily};background-color:${
         options.backgroundColor
     };border:${BORDER_WIDTHS[options.size]} solid ${options.borderColor};`;
 
