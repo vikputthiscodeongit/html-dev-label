@@ -73,6 +73,11 @@ function htmlDevLabel(positionOrOptions?: Options["position"] | Options) {
         textContent: options.text,
     });
 
+    if (options.hideOnHover) {
+        el.addEventListener("mouseover", () => el.style.setProperty("opacity", "0.05"));
+        el.addEventListener("mouseout", () => el.style.removeProperty("opacity"));
+    }
+
     options.parentEl.insertBefore(el, options.parentEl.firstElementChild);
 }
 
