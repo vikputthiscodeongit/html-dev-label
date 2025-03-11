@@ -6,6 +6,7 @@ interface Options {
     fontFamily?: "monospace" | "sans-serif" | "inherit";
     backgroundColor?: string;
     borderColor?: string;
+    hideOnHover?: boolean;
 }
 declare function htmlDevLabel(positionOrOptions?: Options["position"] | Options): void;
 export { htmlDevLabel as default };
