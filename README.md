@@ -39,6 +39,7 @@ htmlDevLabel(["top", "left"]);
 | `fontFamily`      | `"monospace"` \| `"sans-serif"` \| `"inherit"`   | `"monospace"`         | Style of font family used for the label text. Will use the computed value of the parent element when set to `"inherit"`. |
 | `backgroundColor` | `string`                                         | `"#FFF"` (white)      | Background color of the label.                                                                                           |
 | `borderColor`     | `string`                                         | `"#F00"` (red)        | Border color of the label.                                                                                               |
+| `hideOnHover`     | `boolean`                                        | `false`               | Make the label transparent when hovering over it with a pointing device.                                                 |
 
 <br>
 
