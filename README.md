@@ -28,29 +28,27 @@ htmlDevLabel(["top", "left"]);
 <br>
 
 ## Options
-`htmlDevLabel` accepts a single, optional parameter which is either:
-* An `Array` with 2 `position` values, or
-* An `Object` containing one or more of the option entries listed in the table below.
+`htmlDevLabel` accepts a single, optional parameter which is either a `position` array or an `object` with options.
 
-| Key               | Type                                         | Default               | Description                                                                                                                 |
-| :---------------- | :------------------------------------------- | :-------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
-| `parentEl`        | `HTMLElement`                                | `document.body`       | Element of which the label will become the first child.                                                                     |
-| `position`        | `["top" \| "bottom", "left" \| "right"]`     | `["bottom", "right"]` | Position of the label.                                                                                                      |
-| `size`            | `"sm" \| "md" \| "lg"`                       | `"md"`                | Size of the label.                                                                                                          |
-| `text`            | `String`                                     | `"DEV BUILD"`         | Text shown inside the label.                                                                                                |
-| `fontFamily`      | `"monospace" \| "sans-serif" \| "inherit"`   | `"monospace"`         | Style of font family used for the label text. Will use the computed value of the parent element when set to `"inherit"`.    |
-| `backgroundColor` | `String`                                     | `"#FFF"` (white)      | Background color of the label.                                                                                              |
-| `borderColor`     | `String`                                     | `"#F00"` (red)        | Border color of the label.                                                                                                  |
+| Property          | Type                                             | Default               | Description                                                                                                              |
+| :---------------- | :----------------------------------------------- | :-------------------- | :------------------------------------------------------------------------------------------------------------------------|
+| `parentEl`        | `HTMLElement`                                    | `document.body`       | Element of which the label will become the first child.                                                                  |
+| `position`        | `["top" \| "bottom", "left" \| "right"]`         | `["bottom", "right"]` | Position of the label.                                                                                                   |
+| `size`            | `"sm"` \| `"md"` \| `"lg"`                       | `"md"`                | Size of the label.                                                                                                       |
+| `text`            | `string`                                         | `"DEV BUILD"`         | Text shown inside the label.                                                                                             |
+| `fontFamily`      | `"monospace"` \| `"sans-serif"` \| `"inherit"`   | `"monospace"`         | Style of font family used for the label text. Will use the computed value of the parent element when set to `"inherit"`. |
+| `backgroundColor` | `string`                                         | `"#FFF"` (white)      | Background color of the label.                                                                                           |
+| `borderColor`     | `string`                                         | `"#F00"` (red)        | Border color of the label.                                                                                               |
 
 <br>
 
 ## Migrating
 ### From version 2
-* __Breaking change__: Support for `position` as `String` has been removed. Convert the value to an `Array`.
+* __Breaking change__: Support for `position` as `string` has been removed. Convert the value to an array.
 * The default `font-family` used for the label text has changed.
   * If you prefer the old look, use value `"sans-serif"` for the `fontFamily` option.
 
 <br>
 
 ## License
-MIT © 2024 [Viktor Chin-Kon-Sung](https://github.com/vikputthiscodeongit)
+MIT © 2025 [Viktor Chin-Kon-Sung](https://github.com/vikputthiscodeongit)
