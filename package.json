@@ -39,7 +39,7 @@
     "minify": "terser dist/index.js --output dist/index.js --ecma 2021 --compress passes=2"
   },
   "dependencies": {
-    "@codebundlesbyvik/js-helpers": "2.1.2"
+    "@codebundlesbyvik/js-helpers": "^2.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
