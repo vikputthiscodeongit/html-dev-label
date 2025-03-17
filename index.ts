@@ -79,6 +79,8 @@ function htmlDevLabel(positionOrOptions?: Options["position"] | Options) {
     }
 
     options.parentEl.insertBefore(el, options.parentEl.firstElementChild);
+
+    return;
 }
 
 export { htmlDevLabel as default };
