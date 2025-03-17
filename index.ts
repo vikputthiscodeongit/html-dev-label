@@ -41,12 +41,12 @@ const BORDER_WIDTHS = {
 function htmlDevLabel(positionOrOptions?: Options["position"] | Options) {
     if (process.env.NODE_ENV !== "development") return;
 
-    console.log("Project is compiled in development mode.");
+    console.info("Project is compiled in development mode.");
 
     const elInDom = document.body.contains(document.querySelector("#html-dev-label"));
 
     if (elInDom) {
-        console.log("Element #htmlDevLabel already in the DOM.");
+        console.info("Element #htmlDevLabel already in the DOM.");
 
         return;
     }
