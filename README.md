@@ -9,7 +9,7 @@ An HTML element rendered on page which indicates your project is compiled with `
 <br>
 
 ## Installation and usage
-Compatible with Node.js projects that support ECMAScript 2018 (ES9) or greater.
+Compatible with Node.js projects that support ECMAScript 2018 (ES9) or later.
 
 To use, install the package with npm...
 
