@@ -45,7 +45,7 @@ htmlDevLabel(["top", "left"]);
 
 ## Migrating
 ### From version 2
-* __Breaking change__: Support for `position` as `string` has been removed. Convert the value to an array.
+* **Breaking change**: Support for `position` as `string` has been removed. Convert the value to an array.
 * The default `font-family` used for the label text has changed.
   * If you prefer the old look, use value `"sans-serif"` for the `fontFamily` option.
 
